@@ -1,0 +1,898 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: "Shadows Into Light", sans-serif;
+  color: #013775;
+}
+
+.navbar {
+  font-family: 'Shadows Into Light';
+  font-size: large;
+}
+
+/* for custom navabar toggler in case of phone etc */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(13,110,253, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #0d6efd;
+}
+
+.navbar-brand {
+  margin-right: 35px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* **** section home starts ****** */
+
+#home {
+  width: 100%;
+  position: relative;
+  background: url("./img/home-bg.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 300px 0 120px 0;
+}
+
+@media (max-width: 991px) {
+  #home {
+    padding: 140px 0 60px 0;
+  }
+}
+
+@media (max-width: 574px) {
+  #home {
+    padding: 100px 0 20px 0;
+  }
+}
+
+#home .hero-img {
+  margin-top: -15%;
+  float: right;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+
+  /* vertical-align: middle; */
+}
+
+#home .hero-img img {
+  width: 100%;
+  border-radius: 50%;
+  background-color: none;
+}
+
+@media (max-width: 991px) {
+  #home .hero-img {
+    width: 80%;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+}
+
+#home .home-quote {
+  width: 50%;
+  float: left;
+  margin-top: -8%;
+}
+
+@media (max-width: 991px) {
+  #home .home-quote {
+    width: 80%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #home .home-quote {
+    width: 100%;
+  }
+}
+
+#home .home-quote h4 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#home .home-quote h4:nth-child(2) {
+  color: #74b5fc;
+}
+
+@media (max-width: 767px) and (min-width:360px) {
+  #home .home-quote h4 {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 359px) {
+  #home .home-quote h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+
+/*typewriter animation*/
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.css-typing h4 {
+
+  border-right: .15em solid rgb(0, 162, 255);
+  font-family: 'Shadows Into Light';
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.css-typing h4:nth-child(1) {
+  width: 8.5em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h4:nth-child(2) {
+  width: 8.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h4:nth-child(3) {
+  width: 8em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(40, end);
+  animation: type3 2s steps(40, end);
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99.9% {
+    border-right: .15em solid rgb(0, 162, 255);
+  }
+
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99.9% {
+    border-right: .15em solid rgb(0, 162, 255);
+  }
+
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99.9% {
+    border-right: .15em solid rgb(0, 162, 255);
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99.9% {
+    border-right: .15em solid rgb(0, 162, 255);
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+/* **** section home ends ****** */
+
+/* **** section about  ****** */
+.about-body {
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: Handlee;
+}
+
+#about .about-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  margin-left: 5px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  /* for light mode */
+  transition: all 0.3s ease-in-out;
+}
+
+#about .about-container .icon-box .icon i {
+  color: #007bff;
+  /* for light mode */
+  font-size: 24px;
+  line-height: 0;
+}
+
+#about .about-container .icon-box:hover .icon {
+  background: #007bff;
+  /* for light mode */
+}
+
+#about .about-container .icon-box:hover .icon i {
+  color: #fff;
+}
+
+#about .about-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 22px;
+
+}
+
+
+#about .about-container .icon-box .title a {
+  font-family: "Patrick Hand SC";
+  font-size: 28px;
+  color: #013775;
+  /* for light mode */
+}
+
+#about .about-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 20px;
+  font-family: Handlee;
+}
+
+/* **** section about ends ****** */
+/* **** section about ends ****** */
+
+/* **** section activities ****** */
+/* .accordion h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    font-family:Handlee ;
+  } */
+
+
+
+
+.activities_container .activities_box {
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 5px;
+  /* box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.5); */
+  box-shadow: 5px 15px 25px rgba(1, 81, 253, 0.5);
+  /* for light mode */
+  margin: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.activities_container .activities_box:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: rgba(28, 113, 250, 0.2);
+  /* for light mode */
+  pointer-events: none;
+  z-index: 2;
+}
+
+.activities_container .activities_box .activities_icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: ivory;
+  background: blue;
+  /* for light mode */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.activities_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.activities_container .activities_box .activities_content {
+  position: relative;
+  transition: .5;
+  z-index: 1;
+
+
+}
+
+.activities_container .activities_box:hover .activities_content {
+  color: #fff;
+}
+
+.activities_container .activities_box .activities_content h3 {
+  margin: 10px 0;
+  padding: 0;
+  font-family: "Patrick Hand SC";
+  font-size: 30px;
+  color: #013775;
+}
+
+.activities_container .activities_box .activities_content p {
+  font-family: Handlee;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.activities_container .activities_box:nth-child(1) .activities_icon {
+  box-shadow: 0 0 0 0 rgb(243, 62, 62);
+  background: rgb(243, 62, 62);
+}
+
+.activities_container .activities_box:nth-child(1):hover .activities_icon {
+  box-shadow: 0 0 0 400px rgb(243, 62, 62);
+
+}
+
+.activities_container .activities_box:nth-child(2) .activities_icon {
+
+  box-shadow: 0 0 0 0 rgb(3, 178, 247);
+  background: rgb(3, 178, 247);
+}
+
+.activities_container .activities_box:nth-child(2):hover .activities_icon {
+
+  box-shadow: 0 0 0 400px rgb(3, 178, 247);
+}
+
+.activities_container .activities_box:nth-child(3) .activities_icon {
+  box-shadow: 0 0 0 0 rgb(127, 83, 248);
+  background: rgb(127, 83, 248);
+}
+
+.activities_container .activities_box:nth-child(3):hover .activities_icon {
+  box-shadow: 0 0 0 400px rgb(127, 83, 248);
+
+}
+
+.activities_container .activities_box:last-child .activities_icon {
+  box-shadow: 0 0 0 0 palevioletred;
+  background: palevioletred;
+}
+
+.activities_container .activities_box:last-child:hover .activities_icon {
+  box-shadow: 0 0 0 400px palevioletred;
+}
+
+/* #### Media Queries #### */
+/* @media (max-width: 1640px) and (min-width: 1200px) {
+ 
+  }
+} */
+
+@media (max-width: 800px) and (min-width: 300px) {
+  .activities_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* **** section activities  ends****** */
+
+/********section skills starts*********/
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.skills {
+  padding: 5rem 0 2.5rem 0;
+
+}
+
+
+.skills .row {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+
+.skills .item {
+  width: 700px;
+  width: 100%;
+  box-shadow: 5px 15px 25px rgba(1, 81, 253, 0.5);
+  padding: 0.5rem 0;
+  margin: 0.3rem 0;
+}
+
+.skills .item-text {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+  /* font-family: "Patrick Hand SC"; */
+  font-family: "Handlee";
+}
+
+.skills .item-text span:last-child {
+  position: absolute;
+}
+
+.skills .item-text .w-90 {
+  margin-left: 85%;
+}
+
+.skills .item-text .w-75 {
+  margin-left: 70%;
+}
+
+.skills .item-text .w-85 {
+  margin-left: 80%;
+}
+
+.skills .item-text .w-80 {
+  margin-left: 75%;
+}
+
+.skills .item-text .w-60 {
+  margin-left: 55%;
+}
+
+.skills .item-text .w-68 {
+  margin-left: 63%;
+}
+
+.progress {
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  height: 16px;
+  width: 100%;
+  background-color: #013775;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #2f82fd;
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.progress-bar.w-90 {
+  width: 90%;
+}
+
+.progress-bar.w-75 {
+  width: 75%;
+}
+
+.progress-bar.w-85 {
+  width: 85%;
+}
+
+.progress-bar.w-80 {
+  width: 80%;
+}
+
+.progress-bar.w-60 {
+  width: 60%;
+}
+
+.progress-bar.w-68 {
+  width: 68%;
+}
+
+/* #### Media Queries #### */
+@media (max-width: 1000px) and (min-width: 800px) {
+  .skills .row {
+    width: 790px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 650px) {
+  .skills .row {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 510px) {
+  .skills .row {
+    width: 500px;
+  }
+}
+
+@media (max-width: 510px) and (min-width: 350px) {
+  .skills .row {
+    width: 340px;
+  }
+}
+
+@media (max-width: 350px) and (min-width: 250px) {
+  .skills .row {
+    width: 240px;
+  }
+}
+
+@media (max-width: 240px) {
+  .skills .row {
+    width: 100px;
+  }
+}
+
+
+/********section contact starts*********/
+
+
+#contact {
+
+
+  box-shadow: 0px 0px 25px 0px rgba(1, 81, 253, 0.829);
+  /* for light mode */
+
+  padding: 60px 0;
+  overflow: hidden;
+  color: darkblue;
+  /* for light mode */
+
+
+}
+
+#contact .section-header {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#contact .section-header h1 {
+  /* font-size: 36px; */
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Shadows Into Light", sans-serif;
+  /* font-weight: 300; */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #013775;
+  /* for light mode */
+}
+
+#contact .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: larger;
+}
+
+#contact .form ::placeholder {
+  font-weight: 700;
+  font-size: larger;
+  color: #74b5fc;
+  /* font-family: "Patrick Hand SC"; */
+  font-family: "Handlee";
+  /* for light mode */
+}
+
+#contact .email-form input,
+#contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+
+}
+
+#contact .email-form input:focus,
+#contact .email-form textarea:focus {
+  border-color: ivory;
+}
+
+#contact .email-form input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-color: #0450a7;
+  /*for dark mode*/
+}
+
+#contact .email-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border-color: #013775;
+  /*for light mode*/
+}
+
+#contact .email-form button {
+  background-color: white;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #013775;
+  /* for light mode */
+  transition: 0.3s;
+  /* font-family: "Patrick Hand SC"; */
+  font-family: "Handlee";
+  font-size: 25px;
+}
+
+#contact .email-form button:hover {
+  background-color: #013775;
+  /* for light mode */
+  color: white;
+  cursor: pointer;
+}
+
+
+/*feedback response*/
+#feedback {
+  display: none;
+}
+
+#feedback h1 {
+  margin: 50px;
+  font-family: Handlee;
+  text-decoration: none;
+
+}
+
+#feedback .feedback_body .lead {
+  font-family: "Patrick Hand SC";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/********section contact ends*********/
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+
+
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+
+}
+
+#footer .footer-top {
+  box-shadow: 0px 0px 25px 0px rgba(1, 81, 253, 0.829);
+  /* for light mode */
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top h1 {
+
+  font-size: 40px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  /* color:white;for dark mode */
+  color: #013775;
+  /* for light mode*/
+
+}
+
+#footer .footer-top h3 {
+  font-size: 35px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 400;
+  color: #0450a7;
+  font-family: "Patrick Hand SC";
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+  /* font-family: Inconsolata; */
+  font-family: Handlee;
+  color: royalblue;
+}
+
+#footer .footer-top .social-links a {
+
+  display: inline-flex;
+  justify-content: space-around;
+  border-radius: 50%;
+  font-size: 18px;
+  color: royalblue;
+  margin-right: 4px;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+
+  color: rgb(3, 11, 122);
+  /* for light mode */
+
+}
+
+
+#footer .copyright {
+  text-align: center;
+  /* justify-content: center; */
+  padding-top: 30px;
+  font-size: 30px;
+  /* margin-top: 3%; */
+  color: #013775;
+  font-family: "Patrick Hand SC";
+  /* for light mode*/
+}
+
+@media (max-width: 1650px) and (min-width: 1250px) {
+  #footer .footer-top h1 {
+    margin-left: -40%;
+  }
+
+}
+
+/* @media (max-width: 1250px) {
+  #footer .footer-top container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+} */
+
+@media (max-width: 450px) {
+  #footer .footer-top h3 {
+    /* margin-left: 25%; */
+    display: flex;
+    justify-content: center;
+    /* margin-left: 25%; */
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+-------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+
+}
